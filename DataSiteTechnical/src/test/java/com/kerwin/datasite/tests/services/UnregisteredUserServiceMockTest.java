@@ -1,4 +1,4 @@
-package com.kerwin.datasite.tests;
+package com.kerwin.datasite.tests.services;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -6,12 +6,10 @@ import java.util.List;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.util.Assert;
 
 import com.kerwin.datasite.DataSiteTechnicalApplication;
@@ -19,7 +17,6 @@ import com.kerwin.datasite.entities.UnregisteredUser;
 import com.kerwin.datasite.service.UnregisteredUserService;
 
 @ActiveProfiles("test")
-@ExtendWith(SpringExtension.class)
 @SpringBootTest(classes = DataSiteTechnicalApplication.class)
 public class UnregisteredUserServiceMockTest {
 	
@@ -37,5 +34,15 @@ public class UnregisteredUserServiceMockTest {
 		Assert.notEmpty(unregUserService.findAllUnregisteredUsers(), "Must return list of Unregistered Users");
 		
 	}
+	//Uncomment this to demonstrate failing test
+	//run command gradle test --stacktrace
+	//stacktrace will list gradle test results demonstrating a failed test
+	//folder-file from DataSite project folder /build/reports/test/test/index.html
+	
+//	@Test
+//	@DisplayName("This fails on purpose")
+//	void test2() {
+//		assertTrue(false);
+//	}
 
 }

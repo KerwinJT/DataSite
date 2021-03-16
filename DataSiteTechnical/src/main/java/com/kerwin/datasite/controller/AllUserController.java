@@ -44,7 +44,7 @@ public class AllUserController {
 			return allUsers;
 
 		} catch (Exception e) {
-			response.setStatus(504);
+			response.setStatus(404);
 			return null;
 		}
 
@@ -67,7 +67,7 @@ public class AllUserController {
 			return allUsers;
 
 		} catch (Exception e) {
-			response.setStatus(504);
+			response.setStatus(404);
 			return null;
 		}
 

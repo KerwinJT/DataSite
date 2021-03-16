@@ -1,16 +1,14 @@
-package com.kerwin.datasite.tests;
+package com.kerwin.datasite.tests.services;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.util.Assert;
 
 import com.kerwin.datasite.DataSiteTechnicalApplication;
@@ -18,7 +16,6 @@ import com.kerwin.datasite.entities.RegisteredUser;
 import com.kerwin.datasite.service.RegisteredUserService;
 
 @ActiveProfiles("test")
-@ExtendWith(SpringExtension.class)
 @SpringBootTest(classes = DataSiteTechnicalApplication.class)
 public class RegisteredUserServiceMockTest {
 

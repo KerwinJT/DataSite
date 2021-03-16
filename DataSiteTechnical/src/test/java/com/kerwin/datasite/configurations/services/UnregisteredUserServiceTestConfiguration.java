@@ -1,4 +1,4 @@
-package com.kerwin.datasite;
+package com.kerwin.datasite.configurations.services;
 
 import org.mockito.Mockito;
 import org.springframework.context.annotation.Bean;
